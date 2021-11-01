@@ -1,0 +1,31 @@
+.header-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+}
+
+.nameWrapper{
+    overflow: hidden;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.my-name{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.my-job-title-wrapper{
+    overflow: hidden;
+    font-size: 2em;
+}
+
+.my-job-title{
+    transform: translateY(100%);
+    display: inline-block;
+    color: #e2b8aa;
+}
