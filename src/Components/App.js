@@ -13,11 +13,15 @@ function App() {
     console.log("Menu is clicked")
   }
 
+  // const closeMenuHandler = () => {
+  //   setShowMenu(false)
+  // }
+
   return (
       <main className="main-wrapper">
         <Navbar menuShowHandler={menuShowHandler}/>
         <Header />
-        <Menu showMenu={showMenu}/>
+        <Menu showMenu={showMenu} hideMenu={setShowMenu}/>
       </main>
   );
 }

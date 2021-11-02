@@ -18,3 +18,15 @@ nav{
     justify-content: space-between;
     
 }
+.menuHamburger{
+    transition: 300ms;
+    cursor: pointer;
+    padding: 4px 6px;
+}
+
+.menuHamburger:hover{
+    color: #0c0c0c;
+    background-color: #e2b8aa;
+    border-radius: 100%;
+    
+}

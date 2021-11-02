@@ -1,12 +1,32 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import '../Assets/Styles/Menu.css'
+import CloseIcon from '@mui/icons-material/Close';
 
-const Menu = ({showMenu}) => {
+const Menu = ({showMenu, hideMenu}) => {
     const el = useRef()
     const q = gsap.utils.selector(el)
     const tl = useRef()
 
+
+    const hideMenuHandler = () => {
+        tl.current = gsap.timeline()
+        .to(q('.menu-link'), {
+            opacity: 0, 
+            duration: 0.5, 
+            ease: 'bounce.out',
+            stagger: 0.05
+        })
+        .to(q('.slide'), {
+            y:'-100%',
+            duration: 0.5,
+            ease: 'power2.inOut',
+            stagger: 0.2,
+        })
+        setTimeout(() => {
+            hideMenu(false)
+        }, 2000);
+    }
     useEffect(() => {
         tl.current = gsap.timeline()
         .to(q('.slide'), {
@@ -14,6 +34,12 @@ const Menu = ({showMenu}) => {
             duration: 0.5,
             ease: 'power2.inOut',
             stagger: 0.2,
+        })
+        .to(q('.menu-link'), {
+            opacity: 1, 
+            duration: 1, 
+            ease: 'bounce.out',
+            stagger: 0.05
         })
     }, [showMenu])
 
@@ -26,6 +52,17 @@ const Menu = ({showMenu}) => {
             <div className='slide slide2'></div>
             <div className='slide slide3'></div>
             <div className='slide slide4'></div>
+            
+            <div className="closeBtn" onClick={hideMenuHandler}>
+                <CloseIcon fontSize='large'/>
+            </div>
+            
+            <div className="menu-items">
+                <a className='menu-link' href="#">HOME</a>
+                <a className='menu-link' href="#">PROJECTS</a>
+                <a className='menu-link' href="#">ABOUT ME</a>
+                <a className='menu-link' href="#">CONTACT</a>
+            </div>
         </div>
         )
     )

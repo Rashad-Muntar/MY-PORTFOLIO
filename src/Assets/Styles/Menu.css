@@ -17,32 +17,45 @@
     transform: translateY(-100%);
 }
 
-/* .slide{
-    width: 25%;
-    z-index: 99;
-    height: 100%;
-    background-color: #e2b8aa;
+.menu-items{
     position: absolute;
-    
-} */
-
-/* .slide1{
-    left: 0;
-    border: 2px solid red;
+    left: 10%;
+    top: 25%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
-.slide1{
-    left: 25%;
+.menu-link{
+    color:#0c0c0c;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: 700;
+    opacity: 0;
+    width: 50%;
+    transition: 400ms;
+    padding: 7px 10px;
+    box-sizing: border-box;
 }
 
-.slide2{
-    left: 50%;
+.menu-link:hover{
+    color: #e2b8aa;
+    background-color:#0c0c0c;
 }
 
-.slide3{
-    left: 75%;
+.closeBtn{
+    position: absolute;
+    color: #0c0c0c;
+    right: 0;
+    margin: 10px 60px;
+    transition: 400ms;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.slide4{
-    left: 100%;
-} */
+.closeBtn:hover{
+    color: #e2b8aa;
+    background-color:#0c0c0c;
+    border-radius: 100%;
+}
