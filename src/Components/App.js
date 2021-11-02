@@ -3,6 +3,7 @@ import '../Assets/Styles/App.css';
 import Navbar from './Navbar';
 import Header from './Header'
 import Menu from './Menu'
+import About from './Aboutme';
 
 function App() {
 
@@ -13,15 +14,12 @@ function App() {
     console.log("Menu is clicked")
   }
 
-  // const closeMenuHandler = () => {
-  //   setShowMenu(false)
-  // }
-
   return (
       <main className="main-wrapper">
         <Navbar menuShowHandler={menuShowHandler}/>
         <Header />
         <Menu showMenu={showMenu} hideMenu={setShowMenu}/>
+        <About />
       </main>
   );
 }

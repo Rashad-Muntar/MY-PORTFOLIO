@@ -16,7 +16,7 @@ const Header = () => {
         tl.current = gsap.timeline()
             .to(q('.my-name'),{
                 y: '0%',
-                duration: 2,
+                duration: 1,
                 ease: 'power2.inOut',
             })
             .to(q('.my-job-title'),{
