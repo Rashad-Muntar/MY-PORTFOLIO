@@ -2,26 +2,44 @@
     width: 75%;
     margin: 0 auto;
     position: relative;
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 .header-title{
-    color: #2d9687;
-    font-size: 7em;
-    opacity: 0.7;
+    font-size: 1.3em;
+    color: honeydew;
+    text-align: center;
+    font-family: 'Zen Kurenaido', sans-serif;
+    letter-spacing: 5px;
+    margin-left: 0;
 }
 
 .about-content{
-    position: absolute;
-    top: 0;
-    left: 40%;
-    font-size: 1.2em;
-    line-height: 30px;
     opacity: 0;
 }
 
-.underline{
-    height: 10px;
-    width: 0;
-    background-color: #c22085;
+.first-section{
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.sec-setion-wrapper{
+    overflow: hidden;
+}
+
+.sec-section{
+    font-size: 1.3em;
+    color: rgb(218, 218, 218);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    transform: translateY(110%);
+    display: inline-block;
+    transition: 1s;
+}
+
+.span1{
+    color: #e2b8aa;
 }

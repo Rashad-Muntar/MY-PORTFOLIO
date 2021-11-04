@@ -12,11 +12,14 @@
     overflow: hidden;
     font-size: 4em;
     margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .my-name{
     transform: translateY(100%);
     display: inline-block;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Bowlby One SC', cursive;
 }
 
 .my-job-title-wrapper{
@@ -31,7 +34,7 @@
 }
 
 .social{
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

@@ -14,18 +14,18 @@ const About = () => {
 
     useEffect(() => {
       tl.current = gsap.timeline()
-      .to(q('.header-title'), {marginLeft:'100px', opacity:0.3, duration:5, ease:'sine.in', 
+      .to(q('.header-title'), {marginLeft:'300px', duration:2, ease:'sine.in', 
       scrollTrigger:{
           trigger: '.about-wrapper',
           start: 'top 100%',
           scrub: 1,
       }})
-      .to(q('.underline'),{width:'30%', duration:1, 
+      .to(q('.sec-section'), {y:'0%', ease:'power2.inOut', 
       scrollTrigger:{
-        trigger: '.about-wrapper',
-        start: 'top 100%',
-        scrub: 1,
-        // markers: true
+          trigger: '.about-wrapper',
+          start: "top 40%",
+          end: "top 20%",
+          toggleActions: "play none reverse none",
       }})
     }, [])
 
@@ -43,18 +43,22 @@ const About = () => {
         <section className='about-wrapper' ref={el}>
             <div>
                 <h1 className="header-title">
-                    About me
+                    Few Words About Me
                     <div className='underline'/>
                 </h1>
                 
             </div>
             <p className="about-content">
-                I am a software engineer specialized in frontend, backend and TDD for complete scalable web apps.
-                <p>
-                I have a passion for transforming business ideas into beautiful web applications. I have built everything 
-                in the full-stack curriculum from landing pages with excellent UI to JavaScript and Rails APIs. I have pair-programed 
-                with different developers around the world working remotely.
+                <p className="first-section">
+                    I am a <span className="span1">software engineer specialized in frontend </span>, backend and TDD for complete scalable web apps.
                 </p>
+                <div className="sec-setion-wrapper">
+                    <p className="sec-section">
+                        I have a passion for transforming business ideas into beautiful web applications.
+                        I have built everything in the full-stack with excellent UI to JavaScript and Rails APIs. I have pair-programed 
+                        with different developers around the world working remotely.
+                    </p>
+                </div>
             </p>
         </section>
     )

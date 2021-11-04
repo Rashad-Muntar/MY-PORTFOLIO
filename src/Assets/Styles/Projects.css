@@ -1,10 +1,8 @@
 .project-wrapper{
     width: 100%;
     margin: 0 auto;
-    margin-top: 200px;
     height: 120vh;
     position: relative;
-    /* border: 1px solid wheat; */
     overflow: hidden;
 }
 .moving-div{
@@ -104,18 +102,17 @@
   }
 
   .card-content{
-    background-color: #e2b8aa;
     height: 180px;
     width: 170px;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 15%;
     color: #0c0c0c;
-    padding: 0 10px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transition: 450ms;
+    border-radius: 7px;
+    
   }
 
   .item-title{
@@ -130,4 +127,37 @@
     color: #18695d;
     font-weight: 700;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .inner-div{
+    height: 100%;
+    width: 100%;background-color: #e2b8aa;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* display: inline-block; */
+    transform: translateY(100%);
+    transition: 400ms;
+  }
+
+  .wrapper1:hover .inner-div{
+    transform: translateY(0%);
+}
+
+.wrapper1:hover .card-content{
+    opacity: 1;
+}
+
+.wrapper2:hover .inner-div{
+    transform: translateY(0%);
+}
+
+.wrapper2:hover .card-content{
+    opacity: 1;
+}
+

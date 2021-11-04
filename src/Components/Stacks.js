@@ -1,5 +1,5 @@
 import '../Assets/Styles/Contact.css'
-const Contact = () => {
+const Stacks = () => {
     return (
         <div className="contact">
             <div className="left">
@@ -12,4 +12,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Stacks

@@ -4,15 +4,7 @@ import pico from '../Assets/Images/pico1.png'
 import pico2 from '../Assets/Images/pico2.png'
 import checker1 from '../Assets/Images/checker1.png'
 import checker2 from '../Assets/Images/checker2.png'
-import crypto1 from '../Assets/Images/crypto1.png'
-import crypto2 from '../Assets/Images/crypto2.png'
-import life1 from '../Assets/Images/life1.png'
-import life2 from '../Assets/Images/life2.png'
-import wd1 from '../Assets/Images/weather.png'
-import wd2 from '../Assets/Images/weather2.png'
-import GitHubIcon from '@mui/icons-material/GitHub';
-import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -55,17 +47,31 @@ const Projects  = () => {
                 <img className="card-img  pico1" src={pico} />
                 <img className="card-img pico2" src={pico2} />
                 <div className='card-content'>
-                    <p className="item-title">Picofood</p>
-                    <a className="item-link" href='#'>View project</a>
+                    <div className="inner-div">
+                        <p className="item-title">Picofood</p>
+                        <a className="item-link" href='#'>
+                            view project
+                            <ArrowRightAltIcon />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="text-content">
                 <h1 className="recent">Recent <br /> Works</h1>
-                    <a href='#' className='view-all'>VIEW ALL WORKS</a>
+                    <a href='#' className='view-all'>MY RESUME</a>
             </div>
             <div className='img-wrapper wrapper2'>
                 <img className="card-img  checker1" src={checker1} />
                 <img className="card-img  checker2" src={checker2} />
+                <div className='card-content'>
+                    <div className="inner-div">
+                        <p className="item-title">Checker</p>
+                        <a className="item-link" href='#'>
+                            view project
+                            <ArrowRightAltIcon />
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     )

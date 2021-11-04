@@ -5,7 +5,7 @@ import Header from './Header'
 import Menu from './Menu'
 import About from './Aboutme';
 import Projects from './Projects';
-import Contact from './Contact';
+import Stacks from './Stacks';
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
         <Menu showMenu={showMenu} hideMenu={setShowMenu}/>
         <About />
         <Projects />
-        <Contact />
+        <Stacks />
       </main>
   );
 }
