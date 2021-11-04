@@ -47,6 +47,7 @@
     color: #e7e7e7;
     transition: 300ms;
     opacity: 0;
+    z-index: 99;
 }
 
 .social-icon:hover{

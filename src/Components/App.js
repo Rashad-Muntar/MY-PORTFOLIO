@@ -6,6 +6,7 @@ import Menu from './Menu'
 import About from './Aboutme';
 import Projects from './Projects';
 import Stacks from './Stacks';
+import Contact from './Contact';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <About />
         <Projects />
         <Stacks />
+        <Contact />
       </main>
   );
 }
