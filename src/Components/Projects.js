@@ -23,86 +23,50 @@ const Projects  = () => {
     const tl = useRef()
     
 
-    // useEffect(() => {
-    //     tl.current = gsap.timeline()
-    //     .to(q('.project-wrapper'), {position:'fixed', 
-    //     scrollTrigger:{
-    //         trigger: '.project-wrapper',
-    //         start: 'top 100%',
-    //         scrub: 1,
-    //         markers: true
-    //     }})
-    // }, [])
+    useEffect(() => {
+        tl.current = gsap.timeline()
+        .to(q('.moving-div'), {rotate:25, ease: 'power2.inOut', opacity: 1,
+        scrollTrigger:{
+            trigger: '.project-wrapper',
+            start: "top 50%",
+            end: "top 40%",
+            toggleActions: "play none reverse none", 
+        }})
+        .to(q('.wrapper1'), {x:'30%', opacity:1, 
+        scrollTrigger:{
+            trigger: '.project-wrapper',
+            start: "top 50%",
+            end: "top 40%",
+            toggleActions: "play none reverse none", 
+        }})
+        .to(q('.wrapper2'), {left:'70%', opacity:1, 
+        scrollTrigger:{
+            trigger: '.project-wrapper',
+            start: "top 50%",
+            end: "top 40%",
+            toggleActions: "play none reverse none", 
+        }})
+    }, [])
 
     return (
         <section className='project-wrapper' ref={el}>
             <div className="moving-div" />
             <div className='img-wrapper wrapper1'>
-                <img className="card-img  phone" src={pico} />
-                <img className="card-img tablet" src={pico2} />
+                <img className="card-img  pico1" src={pico} />
+                <img className="card-img pico2" src={pico2} />
+                <div className='card-content'>
+                    <p className="item-title">Picofood</p>
+                    <a className="item-link" href='#'>View project</a>
+                </div>
             </div>
             <div className="text-content">
                 <h1 className="recent">Recent <br /> Works</h1>
-                <a href='#'>VIEW ALL WORKS</a>
+                    <a href='#' className='view-all'>VIEW ALL WORKS</a>
             </div>
             <div className='img-wrapper wrapper2'>
-                <img className="card-img  checker1" src={checker2} />
-                <img className="card-img  tablet" src={checker1} />
+                <img className="card-img  checker1" src={checker1} />
+                <img className="card-img  checker2" src={checker2} />
             </div>
-                {/* <div className="detail-section">
-                    <div className="detail1">
-                        <span className="counter">1</span>
-                        <h1 className='card-title'>Picofood</h1>
-                        <h3 className="passion">Full-stack <FavoriteBorderIcon /> UI Designer </h3>
-                            <dv className="stacks">
-                                <p>React  Redux  Material UI  Netlify</p>
-                                <p className="description">This is a front-end only application for a food restaurant. This application was built with <span className='in-span'>React.js</span> and <span className='in-span'>Redux</span> which is responsive across all media screens.</p>
-                                <div className="access">
-                                    <a href="#" className="access-item">
-                                        <GitHubIcon />
-                                    </a>
-                                    <a href="#" className="access-item" >
-                                        <DynamicFeedIcon />
-                                    </a>
-                                </div>
-                            </dv>
-                    </div>
-
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            <div className='project-card-container'>
-                <div className="card card1">
-                    
-                    <img className="card-img  phone" src={pico} />
-                    <img className="card-img tablet" src={pico2} />
-                    <img className="card-img tablet tab2" src={pico2} />
-                </div>
-
-                <div className="card card1">
-                    <img className="card-img  checker1" src={checker2} />
-                    <img className="card-img checker2" src={checker1} />
-                    <img className="card-img  checker3" src={checker1} />
-                </div>
-
-                <div className="card card1">
-                    <img className="card-img  tablet" src={crypto1} />
-                    <img className="card-img tablet tab3" src={crypto2} />
-                    <img className="card-img  tablet tab4" src={crypto1} />
-                </div>
-
-                <div className="card card1">
-                    <img className="card-img  tablet" src={life1} />
-                    <img className="card-img tablet tab5" src={life2} />
-                    <img className="card-img  tablet tab6" src={life1} />
-                </div>
-                <div className="card card1">
-                    <img className="card-img  tablet" src={wd1} />
-                    <img className="card-img tablet tab7" src={wd2} />
-                    <img className="card-img  tablet tab8" src={wd1} />
-                </div>
-            </div> */}
         </section>
     )
 }
