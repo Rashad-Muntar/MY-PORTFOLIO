@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import Header from './Header'
 import Menu from './Menu'
 import About from './Aboutme';
+import Projects from './Projects';
+import Contact from './Contact';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
         <Header />
         <Menu showMenu={showMenu} hideMenu={setShowMenu}/>
         <About />
+        <Projects />
+        <Contact />
       </main>
   );
 }

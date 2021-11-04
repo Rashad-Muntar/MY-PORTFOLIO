@@ -14,19 +14,18 @@ const About = () => {
 
     useEffect(() => {
       tl.current = gsap.timeline()
-      .to(q('.header-title'), {marginLeft:'200px', opacity:0.3, duration:5, ease:'sine.in', 
+      .to(q('.header-title'), {marginLeft:'100px', opacity:0.3, duration:5, ease:'sine.in', 
       scrollTrigger:{
           trigger: '.about-wrapper',
           start: 'top 100%',
-          end: '+=400',
-          scrub: 1
+          scrub: 1,
       }})
       .to(q('.underline'),{width:'30%', duration:1, 
       scrollTrigger:{
         trigger: '.about-wrapper',
         start: 'top 100%',
-        end: '+=400',
-        scrub: 1
+        scrub: 1,
+        // markers: true
       }})
     }, [])
 

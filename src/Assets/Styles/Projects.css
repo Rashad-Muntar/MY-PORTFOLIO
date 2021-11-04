@@ -1,0 +1,54 @@
+.project-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 200px;
+    height: 120vh;
+    position: relative;
+    /* border: 1px solid wheat; */
+    overflow: hidden;
+}
+.moving-div{
+    height: 100%;
+    width: 180%;
+    background-color: #141414;
+    top: 50%;
+    position: absolute;
+    transform: rotate(25deg);
+    left: -50%;
+    z-index: -1;
+    /* transform: translateX(10%); */
+}
+
+.img-wrapper{
+    width: 30%;
+    /* border: 1px solid salmon; */
+    position: absolute;
+}
+
+.card-img{
+    width: 30%;
+}
+
+.wrapper1{
+    left: 20%;
+    top: 10%;
+}
+
+.wrapper2{
+    top: 40%;
+    left: 65%;
+    z-index: -2;
+}
+
+.text-content{
+    top: 30%;
+    left: 45%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.recent{
+    font-size: 4em;
+    font-weight: 800;
+}
