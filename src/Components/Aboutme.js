@@ -42,15 +42,11 @@ const About = () => {
     return (
         <section className='about-wrapper' ref={el}>
             <div>
-                <h1 className="header-title">
-                    Few Words About Me
-                    <div className='underline'/>
-                </h1>
-                
+                <h1 className="header-title"> FEW WORDS ABOUT ME </h1>
             </div>
             <p className="about-content">
                 <p className="first-section">
-                    I am a <span className="span1">software engineer specialized in frontend </span>, backend and TDD for complete scalable web apps.
+                    I am a <span className="span1">website and user interface developer specialized in frontend </span>, backend and TDD for complete scalable web apps.
                 </p>
                 <div className="sec-setion-wrapper">
                     <p className="sec-section">
