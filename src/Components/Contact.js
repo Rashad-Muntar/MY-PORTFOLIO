@@ -21,23 +21,23 @@ const Contact = () => {
             start: 'top 100%',
             scrub: 1,
         }})
-      }, [])
+      })
 
     return (
-        <section className='contact-wrapper' ref={el}>
+        <section className='contact-wrapper' id="contact" ref={el}>
             <div className="inner-content-wrapper">
                 <h1 className="header-title"> CONTACT ME </h1>
                 <p className="cta-text">
-                    Looking for a great developer? let's schedule a ZOOM chat or send me an email using the social media links provided. 
+                    Looking for a great developer? let's schedule a ZOOM chat or send me an email or use the social media links provided. 
                     I will gladly respond to you as soon as possible
                 </p>
                 <a href="3"  className="my-email"><span className='email-span'>rashadmuntar5</span>@gmail.com</a>
             </div>
             <div className='socials-wrapper'>
                     <p className='socials-title'>Socials</p>
-                    <a className='contact-social' href='#'><LinkedInIcon /></a>
-                    <a className='contact-social' href='#'><GitHubIcon /></a>
-                    <a className='contact-social' href='#'><TwitterIcon /></a>
+                    <a className='contact-social' rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/rashad-muntar/'><LinkedInIcon /></a>
+                    <a className='contact-social' rel="noreferrer" target="_blank" href='https://github.com/Rashad-Muntar'><GitHubIcon /></a>
+                    <a className='contact-social' rel="noreferrer" target="_blank" href='https://twitter.com/RashadToure'><TwitterIcon /></a>
                 </div>
         </section>
     )

@@ -7,6 +7,12 @@
 nav{
     height: 70px;
     color: #e2b8aa;
+    position: fixed;
+    width: 100%;
+    background-color: #0c0c0c;
+    background: rgba(12, 12, 12, 0.6);
+    z-index: 100;
+
 }
 
 .nav-content-wrapper{

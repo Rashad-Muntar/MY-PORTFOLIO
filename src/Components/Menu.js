@@ -58,10 +58,10 @@ const Menu = ({showMenu, hideMenu}) => {
             </div>
             
             <div className="menu-items">
-                <a className='menu-link' href="#">HOME</a>
-                <a className='menu-link' href="#">PROJECTS</a>
-                <a className='menu-link' href="#">ABOUT ME</a>
-                <a className='menu-link' href="#">CONTACT</a>
+                <a className='menu-link' onClick={hideMenuHandler} href="#header">HOME</a>
+                <a className='menu-link' onClick={hideMenuHandler} href="#projects">PROJECTS</a>
+                <a className='menu-link' onClick={hideMenuHandler} href="#aboutme">ABOUT ME</a>
+                <a className='menu-link' onClick={hideMenuHandler} href="#contact">CONTACT</a>
             </div>
         </div>
         )

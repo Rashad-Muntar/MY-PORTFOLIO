@@ -1,6 +1,7 @@
 import  { useRef, useEffect} from 'react'
 import '../Assets/Styles/Projects.css'
 import pico from '../Assets/Images/pico1.png'
+import resume from '../Assets/Documents/resume.pdf'
 import pico2 from '../Assets/Images/pico2.png'
 import checker1 from '../Assets/Images/checker1.png'
 import checker2 from '../Assets/Images/checker2.png'
@@ -38,14 +39,14 @@ const Projects  = () => {
             end: "top 40%",
             toggleActions: "play none reverse none", 
         }})
-    }, [])
+    })
 
     return (
-        <section className='project-wrapper' ref={el}>
+        <section className='project-wrapper' id="projects" ref={el}>
             <div className="moving-div" />
             <div className='img-wrapper wrapper1'>
-                <img className="card-img  pico1" src={pico} />
-                <img className="card-img pico2" src={pico2} />
+                <img className="card-img  pico1" src={pico} alt='pic1'/>
+                <img className="card-img pico2" src={pico2} alt='pic2'/>
                 <div className='card-content'>
                     <div className="inner-div">
                         <p className="item-title">Picofood</p>
@@ -58,11 +59,11 @@ const Projects  = () => {
             </div>
             <div className="text-content">
                 <h1 className="recent">Recent <br /> Works</h1>
-                    <a href='#' className='view-all'>MY RESUME</a>
+                    <a href={resume} target="_blank" className='view-all'>MY RESUME</a>
             </div>
             <div className='img-wrapper wrapper2'>
-                <img className="card-img  checker1" src={checker1} />
-                <img className="card-img  checker2" src={checker2} />
+                <img className="card-img  checker1" src={checker1} alt='pic3'/>
+                <img className="card-img  checker2" src={checker2} alt='pic4'/>
                 <div className='card-content'>
                     <div className="inner-div">
                         <p className="item-title">Checker</p>

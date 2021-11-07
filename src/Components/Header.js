@@ -25,10 +25,10 @@ const Header = () => {
                 ease: 'power2.inOut'
             })
             .to(q('.social-icon'),{opacity:1, stagger:0.3})
-    }, [])
+    })
 
     return (
-        <section className='header-wrapper' ref={el}>
+        <section className='header-wrapper' ref={el} id='header'>
             <div className='nameWrapper'>
                 <span className='my-name'>RASHAD MUNTAR</span>
             </div>
@@ -38,9 +38,9 @@ const Header = () => {
             </div>
 
             <div className='social'>
-                <a className='social-icon' href='#'><LinkedInIcon fontSize='large'/></a>
-                <a className='social-icon' href='#'><GitHubIcon fontSize='large'/></a>
-                <a className='social-icon' href='#'><TwitterIcon fontSize='large'/></a>
+                <a className='social-icon' rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/rashad-muntar/'><LinkedInIcon fontSize='large'/></a>
+                <a className='social-icon' rel="noreferrer" target="_blank" href='https://github.com/Rashad-Muntar'><GitHubIcon fontSize='large'/></a>
+                <a className='social-icon' rel="noreferrer" target="_blank" href='https://twitter.com/RashadToure'><TwitterIcon fontSize='large'/></a>
             </div>
         </section>
     )

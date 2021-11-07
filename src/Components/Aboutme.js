@@ -27,7 +27,7 @@ const About = () => {
           end: "top 20%",
           toggleActions: "play none reverse none",
       }})
-    }, [])
+    })
 
     useEffect(() => {
         gsap.to('.about-content', {opacity:2, duration:0.5, stagger:0.02, ease:'sine.in', 
@@ -37,10 +37,10 @@ const About = () => {
             end: '+=400',
             scrub: 1
         }})
-      }, [])
+      })
 
     return (
-        <section className='about-wrapper' ref={el}>
+        <section className='about-wrapper' id="aboutme" ref={el}>
             <div>
                 <h1 className="header-title"> FEW WORDS ABOUT ME </h1>
             </div>
