@@ -1,49 +1,51 @@
 import { useRef, useEffect } from 'react';
-import '../Assets/Styles/Header.css'
-import { gsap } from "gsap";
+import { Link } from 'react-router-dom';
+import '../Assets/Styles/Header.css';
+import { gsap } from 'gsap';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Header = () => {
-    const el = useRef()
-    const q = gsap.utils.selector(el)
-    const tl = useRef()
-    
+  const el = useRef();
+  const q = gsap.utils.selector(el);
+  const tl = useRef();
 
-    useEffect(() => {
-    
-        tl.current = gsap.timeline()
-            .to(q('.my-name'),{
-                y: '0%',
-                duration: 1,
-                ease: 'power2.inOut',
-            })
-            .to(q('.my-job-title'),{
-                y:'0%',
-                duration: 1,
-                ease: 'power2.inOut'
-            })
-            .to(q('.social-icon'),{opacity:1, stagger:0.3})
-    })
+  useEffect(() => {
+    tl.current = gsap.timeline()
+      .to(q('.my-name'), {
+        y: '0%',
+        duration: 1,
+        ease: 'power2.inOut',
+      })
+      .to(q('.my-job-title'), {
+        y: '0%',
+        duration: 1,
+        ease: 'power2.inOut',
+      })
+      .to(q('.social-icon'), { opacity: 1, stagger: 0.3 });
+  });
 
-    return (
-        <section className='header-wrapper' ref={el} id='header'>
-            <div className='nameWrapper'>
-                <span className='my-name'>RASHAD MUNTAR</span>
-            </div>
+  return (
+    <section className="header-wrapper" ref={el} id="header">
+      <div className="nameWrapper">
+        <span className="my-name">RASHAD MUNTAR</span>
+      </div>
 
-            <div className='my-job-title-wrapper'>
-                <div className='my-job-title'>FULL-STACK DEVELOPER</div>
-            </div>
+      <div className="my-job-title-wrapper">
+        <div className="my-job-title">FULL-STACK DEVELOPER</div>
+      </div>
 
-            <div className='social'>
-                <a className='social-icon' rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/rashad-muntar/'><LinkedInIcon fontSize='large'/></a>
-                <a className='social-icon' rel="noreferrer" target="_blank" href='https://github.com/Rashad-Muntar'><GitHubIcon fontSize='large'/></a>
-                <a className='social-icon' rel="noreferrer" target="_blank" href='https://twitter.com/RashadToure'><TwitterIcon fontSize='large'/></a>
-            </div>
-        </section>
-    )
-}
+      <div className="social">
+        <Link className="social-icon" to="https://www.linkedin.com/in/rashad-muntar/" target="_blank"><LinkedInIcon /></Link>
+        <Link className="social-icon" to="https://github.com/Rashad-Muntar" target="_blank"><GitHubIcon /></Link>
+        <Link className="social-icon" to="https://twitter.com/RashadToure" target="_blank"><TwitterIcon /></Link>
+        {/* <a className="social-icon" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/rashad-muntar/"><LinkedInIcon fontSize="large" /></a>
+        <a className="social-icon" rel="noreferrer" target="_blank" href="https://github.com/Rashad-Muntar"><GitHubIcon fontSize="large" /></a>
+        <a className="social-icon" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><TwitterIcon fontSize="large" /></a> */}
+      </div>
+    </section>
+  );
+};
 
-export default Header
+export default Header;
