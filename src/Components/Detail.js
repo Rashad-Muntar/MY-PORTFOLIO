@@ -10,13 +10,13 @@ import ProjectModal from './Modal';
 
 const Allprojects = () => {
 
-  // let [prId, setPrId] = useState('')
-  // const [modalstyle, setModalStyle] = useState("modal-wrapper")
+  let [prId, setPrId] = useState('')
+
   const [open, setOpen] = useState(false);
 
 
   const openModal = (e) => {
-   console.log(e.target.id)
+   setPrId(e.target.id)
    setOpen(true)
   };
   
@@ -26,7 +26,7 @@ const Allprojects = () => {
 
   return (
     <>
-    <ProjectModal closeModal={closeModal} showModal={open}/>  
+    <ProjectModal productId={prId} closeModal={closeModal} showModal={open}/>  
   <div className="all-project-wrapper" >
       <div className="all-project-content-wtrapper">
         <h1 className="all-pro-header-title">Featured Projects</h1>
@@ -46,12 +46,12 @@ const Allprojects = () => {
             <img id="3" src={weather} alt="pico" className="img3 img" />
           </h1>
 
-          <h1 id="4" onClick={() => openModal}  className="pro-titles crypto">
+          <h1 id="4" onClick={openModal}  className="pro-titles crypto">
             Crypt List
             <img id="4" src={crypto} alt="pico" className="img4 img" />
           </h1>
 
-          <h1 id="5" onClick={() => openModal}  className="pro-titles life">
+          <h1 id="5" onClick={openModal}  className="pro-titles life">
             Life Style
             <img id="5" src={life} alt="pico" className="img5 img" />
           </h1>
