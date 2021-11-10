@@ -25,8 +25,9 @@ const Menu = ({ showMenu, hideMenu }) => {
       });
     setTimeout(() => {
       hideMenu(false);
-    }, 2000);
+    }, 1500);
   };
+
   useEffect(() => {
     tl.current = gsap.timeline()
       .to(q('.slide'), {
@@ -69,7 +70,7 @@ const Menu = ({ showMenu, hideMenu }) => {
 };
 
 Menu.propTypes = {
-  showMenu: PropTypes.func.isRequired,
+  showMenu: PropTypes.bool.isRequired,
   hideMenu: PropTypes.func.isRequired,
 };
 

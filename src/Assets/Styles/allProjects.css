@@ -4,7 +4,8 @@
     margin: 0 auto;
     margin: 100px 0;
     display: inline-block;
-    text-align: center;   
+    text-align: center;
+    height: 100%;
 }
 
 .all-pro-header-title{
@@ -18,8 +19,10 @@
     margin: 0;
     color: white;
     font-size: 9em;
-    margin-bottom: 55px;
+    margin-bottom: 65px;
     position: relative;
+    border:none;
+    background-color: transparent;
 }
 
 .all-project-content-wtrapper{
@@ -60,7 +63,7 @@ img{
 
 .img5{
     width: 27%;
-    left: 40%;
+    left: 37%;
 }
 
 .pico:hover .img1{

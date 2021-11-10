@@ -1,45 +1,68 @@
+/* eslint-disable */
+import  { useState } from 'react'
 import '../Assets/Styles/allProjects.css';
 import checker from '../Assets/Images/checker1.png';
 import pico from '../Assets/Images/pico2.png';
 import weather from '../Assets/Images/weather2.png';
 import life from '../Assets/Images/life1.png';
 import crypto from '../Assets/Images/crypto1.png';
+import ProjectModal from './Modal';
 
-const Allprojects = () => (
-  <div className="all-project-wrapper">
-    <div className="all-project-content-wtrapper">
-      <h1 className="all-pro-header-title">Featured Projects</h1>
+const Allprojects = () => {
 
-      <div className="project-cards-wrapper">
-        <h1 className="pro-titles pico">
-          Pico Food
-          <img src={pico} alt="pico" className="img1 img" />
-        </h1>
+  // let [prId, setPrId] = useState('')
+  // const [modalstyle, setModalStyle] = useState("modal-wrapper")
+  const [open, setOpen] = useState(false);
 
-        <h1 className="pro-titles checker">
-          Checker
-          <img src={checker} alt="pico" className="img2 img" />
-        </h1>
 
-        <h1 className="pro-titles weather">
-          Weather
-          <img src={weather} alt="pico" className="img3 img" />
-        </h1>
+  const openModal = (e) => {
+   console.log(e.target.id)
+   setOpen(true)
+  };
+  
+  const closeModal = (hide) => {
+    setOpen(hide)
+  }
 
-        <h1 className="pro-titles crypto">
-          Cryplist
-          <img src={crypto} alt="pico" className="img4 img" />
-        </h1>
+  return (
+    <>
+    <ProjectModal closeModal={closeModal} showModal={open}/>  
+  <div className="all-project-wrapper" >
+      <div className="all-project-content-wtrapper">
+        <h1 className="all-pro-header-title">Featured Projects</h1>
+        <div className="project-cards-wrapper">
+          <h1 id="1" className="pro-titles pico" onClick={openModal}>
+            Pico Food
+            <img id="1" src={pico} alt="pico" className="img1 img" />
+          </h1>
 
-        <h1 className="pro-titles life">
-          Life Style
-          <img src={life} alt="pico" className="img5 img" />
-        </h1>
+          <h1 id="2" className="pro-titles checker" onClick={openModal}>
+            Checker
+            <img id="2" src={checker} alt="pico" className="img2 img" />
+          </h1>
+
+          <h1 id="3" onClick={openModal} className="pro-titles weather">
+            Weather
+            <img id="3" src={weather} alt="pico" className="img3 img" />
+          </h1>
+
+          <h1 id="4" onClick={() => openModal}  className="pro-titles crypto">
+            Crypt List
+            <img id="4" src={crypto} alt="pico" className="img4 img" />
+          </h1>
+
+          <h1 id="5" onClick={() => openModal}  className="pro-titles life">
+            Life Style
+            <img id="5" src={life} alt="pico" className="img5 img" />
+          </h1>
+
+        </div>
+
       </div>
 
     </div>
-
-  </div>
-);
+    </>
+  )
+};
 
 export default Allprojects;
