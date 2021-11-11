@@ -4,11 +4,11 @@ import '../Assets/Styles/Projects.css';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import pico from '../Assets/Images/pico1.png';
+import pico from '../Assets/Images/pic.png';
 // import resume from '../Assets/Documents/resume.pdf';
 import pico2 from '../Assets/Images/pico2.png';
-import checker1 from '../Assets/Images/checker1.png';
-import checker2 from '../Assets/Images/checker2.png';
+import checker1 from '../Assets/Images/ck.png';
+import checker2 from '../Assets/Images/ch2.png';
 
 const Projects = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -40,7 +40,7 @@ const Projects = () => {
         },
       })
       .to(q('.wrapper2'), {
-        left: '70%',
+        left: '65%',
         opacity: 1,
         scrollTrigger: {
           trigger: '.project-wrapper',
