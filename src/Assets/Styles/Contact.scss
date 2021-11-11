@@ -27,13 +27,29 @@
             font-size: 3em;
             color: white;
             margin: 70px 0;
-            display: inline-block;
+            display: block;
             font-family: 'Archivo Black', sans-serif;
             text-decoration: none;
 
             .email-span{
                 color: #e2b8aa;
                 font-family: 'Archivo Black', sans-serif;
+            }
+        }
+
+        .resume{
+            color: #e2b8aa;
+            border: 2px solid #e2b8aa;
+            padding: 15px 25px;
+            text-decoration: none;
+            position: absolute;
+            text-align: center;
+            left: 45%;
+            transition: 400ms;
+
+            &:hover{
+                background-color: #e2b8aa;
+                color: #0c0c0c;
             }
         }
     }
@@ -71,6 +87,11 @@
 
             .my-email{
                 font-size: 1.3em;
+            }
+
+            .resume{
+                left: 30%;
+            
             }
         }
 

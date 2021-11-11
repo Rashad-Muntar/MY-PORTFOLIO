@@ -6,7 +6,6 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import pico from '../Assets/Images/pic.png';
-// import resume from '../Assets/Documents/resume.pdf';
 import pico2 from '../Assets/Images/pico2.png';
 import checker1 from '../Assets/Images/ck.png';
 import checker2 from '../Assets/Images/ch2.png';

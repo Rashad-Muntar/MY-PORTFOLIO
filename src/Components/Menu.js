@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import '../Assets/Styles/Menu.css';
+import '../Assets/Styles/Menu.scss';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Menu = ({ showMenu, hideMenu }) => {

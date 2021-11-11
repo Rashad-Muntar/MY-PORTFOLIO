@@ -79,14 +79,14 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
       {
        productId === '2' && (
        <div className="modal-content-wrapper">
-
+         <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
+           <CloseIcon fontSize="large" />
+         </button>
          <div className="modal-img-section">
            <img src={checker} alt="pico" className="checker-img" />
          </div>
          <div className="modal-desc-section">
-           <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
-             <CloseIcon fontSize="large" />
-           </button>
+
            <div className="pr-desc-wrapper">
              <h1 className="modal-pr-title">Checker --- Mobile view React Application</h1>
              <p className="pr-description">
@@ -95,7 +95,6 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
                This application helps you to be aware of what activities you spend
                much time on and then gives you feed back on total number of hours you
                have spent for each category of your normal day-to-day life
-               This is a React and Redux application
              </p>
              <div className="stacks">
                <span className="stackItem">React.js - </span>
@@ -118,15 +117,15 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
       {
        productId === '3' && (
        <div className="modal-content-wrapper">
-
+         <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
+           <CloseIcon fontSize="large" />
+         </button>
          <div className="modal-img-section">
            <img className="weather-img" src={weather} alt="checker" />
          </div>
 
          <div className="modal-desc-section">
-           <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
-             <CloseIcon fontSize="large" />
-           </button>
+
            <div className="pr-desc-wrapper">
              <h1 className="modal-pr-title">Weather Guide --- Desktop view weather Application</h1>
              <p className="pr-description">
@@ -158,15 +157,15 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
       {
        productId === '4' && (
        <div className="modal-content-wrapper">
-
+         <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
+           <CloseIcon fontSize="large" />
+         </button>
          <div className="modal-img-section">
            <img className="crypto-img" src={crypto} alt="checker" />
          </div>
 
          <div className="modal-desc-section">
-           <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
-             <CloseIcon fontSize="large" />
-           </button>
+
            <div className="pr-desc-wrapper">
              <h1 className="modal-pr-title">Crypto List --- Responsive cryptocurrency prices Application</h1>
              <p className="pr-description">
@@ -195,15 +194,15 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
       {
        productId === '5' && (
        <div className="modal-content-wrapper">
-
+         <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
+           <CloseIcon fontSize="large" />
+         </button>
          <div className="modal-img-section">
            <img className="life-img" src={life} alt="checker" />
          </div>
 
          <div className="modal-desc-section">
-           <button className="modal-closeBtn" type="button" onClick={closeModalHandler}>
-             <CloseIcon fontSize="large" />
-           </button>
+
            <div className="pr-desc-wrapper">
              <h1 className="modal-pr-title">Crypto List --- Responsive cryptocurrency prices Application</h1>
              <p className="pr-description">

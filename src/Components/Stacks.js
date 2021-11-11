@@ -47,7 +47,7 @@ const Stacks = () => {
         </div>
 
         <div className="skills a">
-          <p className="tool">Responsive Design</p>
+          <p className="tool">Great UI/UX Experience</p>
           <p className="tool">Testing & Debugging</p>
           <p className="tool">Application Architecture</p>
           <p className="tool">Interaction Development</p>

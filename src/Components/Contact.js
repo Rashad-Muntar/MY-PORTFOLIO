@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import resume from '../Assets/Documents/resume.pdf';
 
 const Contact = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -39,6 +40,7 @@ const Contact = () => {
           <span className="email-span">rashadmuntar5</span>
           @gmail.com
         </a>
+        <a href={resume} rel="noreferrer" className="resume" target="_blank">MY RESUME</a>
       </div>
       <div className="socials-wrapper">
         <p className="socials-title">Socials</p>
