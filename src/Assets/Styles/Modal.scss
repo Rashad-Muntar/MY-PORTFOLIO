@@ -1,0 +1,135 @@
+.modal-wrapper{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .modal-content-wrapper{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #dd9982;
+        display: flex;
+        transform: translateY(100%);
+
+        .modal-img-section{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .pico-img{
+                width: 85%;
+            }
+            
+            .checker-img{
+                width: 50%;
+            }
+            
+            .weather-img{
+                width: 90%;
+            }
+            
+            .life-img{
+                width: 85%;
+            }
+            
+            .crypto-img{
+                width: 90%;
+            }
+        }
+        
+        .modal-desc-section{
+            width: 50%;
+            background-color: #0c0c0c;
+            height: 100%;
+            color: white;
+            box-sizing: border-box;
+
+            .pr-desc-wrapper{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 40px;
+
+
+                .stacks{
+                    margin-bottom: 20px;
+
+                    .stackItem{
+                        padding: 0 5px;
+                        color: #dd9982;
+                    }
+                }
+
+            .links-wrapper{
+                .lk{
+                    color: white;
+                    padding: 10px;
+                
+                    &:hover{
+                        color: #dd9982;
+                    }
+                }
+                
+            }
+
+            .modal-pr-title{
+                color: white;
+            }
+            }
+
+            .modal-closeBtn{
+                position: absolute;
+                color: #ffffff;
+                right: 0;
+                margin: 10px 60px;
+                transition: 400ms;
+                padding: 10px;
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+
+                &:hover{
+                    color: #0c0c0c;
+                    background-color:#e2b8aa;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 468px) {
+    .modal-wrapper{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    
+        .modal-content-wrapper{
+            flex-direction: column;
+
+            .modal-img-section{
+                width: 100%;
+            }
+
+            .modal-desc-section{
+                width: 100%;
+
+                .pr-desc-wrapper{
+                    padding: 0 20px;
+                }
+            }
+    }
+        
+    }
+}

@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import '../Assets/Styles/Header.css';
+import '../Assets/Styles/Header.scss';
 import { gsap } from 'gsap';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const Header = () => {
   const el = useRef();
@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <section className="header-wrapper" ref={el} id="header">
-      <div className="nameWrapper">
+      <div className="name-wrapper">
         <span className="my-name">RASHAD MUNTAR</span>
       </div>
 
@@ -37,12 +37,10 @@ const Header = () => {
       </div>
 
       <div className="social">
-        <Link className="social-icon" to="https://www.linkedin.com/in/rashad-muntar/" target="_blank"><LinkedInIcon /></Link>
-        <Link className="social-icon" to="https://github.com/Rashad-Muntar" target="_blank"><GitHubIcon /></Link>
-        <Link className="social-icon" to="https://twitter.com/RashadToure" target="_blank"><TwitterIcon /></Link>
-        {/* <a className="social-icon" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/rashad-muntar/"><LinkedInIcon fontSize="large" /></a>
-        <a className="social-icon" rel="noreferrer" target="_blank" href="https://github.com/Rashad-Muntar"><GitHubIcon fontSize="large" /></a>
-        <a className="social-icon" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><TwitterIcon fontSize="large" /></a> */}
+        <a aria-label="linkedin" className="social-icon" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/rashad-muntar/"><LinkedInIcon fontSize="large" /></a>
+        <a aria-label="github" className="social-icon" rel="noreferrer" target="_blank" href="https://github.com/Rashad-Muntar"><GitHubIcon fontSize="large" /></a>
+        <a aria-label="twitter" className="social-icon" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><TwitterIcon fontSize="large" /></a>
+        <a aria-label="twitter" className="social-icon" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><EmailOutlinedIcon fontSize="large" /></a>
       </div>
     </section>
   );

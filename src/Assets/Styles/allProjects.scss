@@ -1,0 +1,121 @@
+.all-project-wrapper{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    margin: 100px 0;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+
+    .all-project-content-wtrapper{
+        width: 90%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-bottom: 150px;
+
+        .all-pro-header-title{
+            font-size: 1.5em;
+            color: #e2b8aa;
+            margin-bottom: 140px;
+        }
+
+        .project-cards-wrapper{
+            height: 100%;
+
+            .pro-titles{
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-size: 9em;
+                margin-bottom: 65px;
+                position: relative;
+                border:none;
+                background-color: transparent;
+            }
+
+            .img{
+                width: 25%;
+                position: absolute;
+                top: -10%;
+                left: 37%;
+                opacity: 0;
+                transition: ease-in-out 0.3s;
+                transform: translateY(30%);
+            }
+
+            .img2{
+                width: 15%;
+                left: 43%;
+                top: -25%;
+            }
+            
+            .img3{
+                width: 28%;
+                left: 38%;
+            }
+            
+            .img4{
+                width: 30%;
+                left: 37%;
+            }
+
+            .img5{
+                width: 27%;
+                left: 37%;
+            }
+
+            .pico:hover .img1{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            
+            .checker:hover .img2{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            
+            .weather:hover .img3{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            
+            .crypto:hover .img4{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            
+            .life:hover .img5{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: 468px) {
+    .all-project-wrapper{
+        .all-project-content-wtrapper{
+            .project-cards-wrapper{
+            .pro-titles{
+                font-size: 3em;
+            }
+        }
+        }
+     
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

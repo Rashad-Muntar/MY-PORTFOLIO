@@ -1,0 +1,95 @@
+.header-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    .name-wrapper{
+        overflow: hidden;
+        font-size: 4em;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    
+        .my-name{
+            transform: translateY(100%);
+            display: inline-block;
+            font-family: 'Bowlby One SC', cursive;
+        }
+    }
+
+    .my-job-title-wrapper{
+        overflow: hidden;
+        font-size: 2em;
+        font-family: 'Archivo Black', sans-serif;
+
+        .my-job-title{
+            transform: translateY(100%);
+            display: inline-block;
+            color: #e2b8aa;
+        }
+    }
+
+    .social{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 200px;
+        align-items: flex-end;
+        width: 87%;
+        z-index: 100;
+
+        .social-icon{
+            color: #e7e7e7;
+            transition: 300ms;
+            opacity: 0;
+            z-index: 99;
+            padding-bottom: 20px;
+
+            &:hover{
+                color: #e2b8aa;
+            }
+        }
+        
+    }
+}
+
+
+@media screen and(max-width: 468px) {
+  
+    .header-wrapper{
+        .name-wrapper{
+            font-size: 3em;
+            text-align: center;
+        }
+        .my-job-title-wrapper{
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+
+        .social{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            height: auto;
+            width: 100%;
+            z-index: 100;
+
+            .social-icon{
+                padding: 0 7px;
+            }
+        }
+    } 
+}
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+.project-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #0c0c0c;
+
+    .moving-div{
+        height: 100%;
+        width: 180%;
+        background-color: #303030;
+        top: 50%;
+        position: absolute;
+        transform: rotate(5deg);
+        left: -50%;
+        opacity: 0.1;
+        transition: 1s;
+    }
+
+    .img-wrapper{
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 100;
+        position: absolute;
+        transform: translateX(-20%);
+        top: 5%;
+        transition: 1s;
+
+        .pico1{
+            width: 50%;
+            cursor: pointer;
+        }
+    
+        .pico2{
+            width: 50%;
+            height: 100%;
+            align-self: flex-end;
+            cursor: pointer;
+            transform: rotate(-5deg);
+        }
+
+        .card-content{
+            position: absolute;
+            background-color: #e2b8aa;
+            height: 200px;
+            width: 180px;
+            padding: 20px 15px;
+            box-sizing: border-box;
+            top: 30%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: 500ms;
+
+            .item-title{
+                color: #0c0c0c;
+                font-size: 1.4em;
+                padding: 0;
+                margin: 0;
+                font-weight: 600
+            }
+
+            .item-link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.9em;
+                font-weight: 600;
+                transition: 500ms;
+
+                .arrow{
+                    margin-left: 5px;
+                    transition: 200ms;
+                }
+
+                &:hover{
+                    color: #0c0c0c;
+                }
+
+                &:hover .arrow{
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        &:hover .card-content{
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .checker1{
+            width: 50%;
+            cursor: pointer;
+        }
+    
+        .checker2{
+            width: 35%;
+            height: 100%;
+            align-self: flex-end;
+            cursor: pointer;
+            transform: rotate(10deg);
+        }
+
+    }
+
+    .wrapper2{
+        top: 30%;
+        left: 50%;
+    }
+
+    .text-content{
+        z-index: 100;
+        position: absolute;
+        top: 33%;
+        left: 40%;
+        text-align: center;
+
+        .recent{
+            font-size: 4em;
+            padding: 0;
+            margin: 0;
+        }
+
+        .view-all-link{
+            display: inline-block;
+            padding: 15px 23px;
+            margin-top: 20px;
+            color: #e2b8aa;
+            border: 2px solid #e2b8aa;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+@media screen and(max-width: 468px) {
+
+    .project-wrapper{
+        height: 100vh;
+
+    .moving-div{
+        height: 100%;
+        width: 180%;
+        background-color: #333333;
+        top: 50%;
+        position: absolute;
+        transform: rotate(5deg);
+        left: -50%;
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    .img-wrapper{
+        width: 80%;
+        transform: translateX(0%);
+}
+
+.wrapper1{
+    display: none;
+}
+
+.wrapper2{
+    position: relative;
+}
+
+.text-content{
+    z-index: 100;
+    position: relative;
+    top: 20%;
+    left: 0%;
+    text-align: center;
+
+    .recent{
+        font-size: 2em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .view-all-link{
+        display: inline-block;
+        padding: 15px 23px;
+        margin-top: 20px;
+        color: #e2b8aa;
+        border: 2px solid #e2b8aa;
+        text-decoration: none;
+    }
+}
+
+}
+
+}
+

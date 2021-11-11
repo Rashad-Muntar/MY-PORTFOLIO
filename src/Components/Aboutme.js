@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import '../Assets/Styles/About.css';
+import '../Assets/Styles/About.scss';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -12,8 +12,8 @@ const About = () => {
   useEffect(() => {
     tl.current = gsap.timeline()
       .to(q('.header-title'), {
-        marginLeft: '300px',
-        duration: 2,
+        marginLeft: '500px',
+        duration: 1,
         ease: 'sine.in',
         scrollTrigger: {
           trigger: '.about-wrapper',
@@ -50,9 +50,9 @@ const About = () => {
 
   return (
     <section className="about-wrapper" id="aboutme" ref={el}>
-      <div>
-        <h1 className="header-title"> FEW WORDS ABOUT ME </h1>
-      </div>
+
+      <h1 className="header-title"> FEW WORDS ABOUT ME </h1>
+
       <p className="about-content">
         <p className="first-section">
           I am a

@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import '../Assets/Styles/Contact.css';
+import '../Assets/Styles/Contact.scss';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -43,12 +42,9 @@ const Contact = () => {
       </div>
       <div className="socials-wrapper">
         <p className="socials-title">Socials</p>
-        <Link className="contact-social" to="https://www.linkedin.com/in/rashad-muntar/" target="_blank"><LinkedInIcon /></Link>
-        <Link className="contact-social" to="https://github.com/Rashad-Muntar" target="_blank"><GitHubIcon /></Link>
-        <Link className="contact-social" to="https://twitter.com/RashadToure" target="_blank"><TwitterIcon /></Link>
-        {/* <a className="contact-social" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/rashad-muntar/"><LinkedInIcon /></a>
-        <a className="contact-social" rel="noreferrer" target="_blank" href="https://github.com/Rashad-Muntar"><GitHubIcon /></a>
-        <a className="contact-social" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><TwitterIcon /></a> */}
+        <a className="contact-social" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/rashad-muntar/"><LinkedInIcon /></a>
+        <a className="contact-social" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://github.com/Rashad-Muntar"><GitHubIcon /></a>
+        <a className="contact-social" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><TwitterIcon /></a>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 /* eslint-disable */
 import  { useState } from 'react'
-import '../Assets/Styles/allProjects.css';
+import '../Assets/Styles/allProjects.scss';
 import checker from '../Assets/Images/ck.png';
 import pico from '../Assets/Images/pico2.png';
 import weather from '../Assets/Images/weather.png';
