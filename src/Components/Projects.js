@@ -33,33 +33,7 @@ const Projects = () => {
   useEffect(() => {
     ScrollTrigger.matchMedia({
 
-      "(max-width: 468px)": function(){
-        tl.current = gsap.timeline()
-        .to(q('.moving-div'), {
-          rotate: 25,
-          ease: 'power2.inOut',
-          opacity: 2,
-          scrollTrigger: {
-            trigger: '.project-wrapper',
-            start: 'top 50%',
-            end: 'top 40%',
-            toggleActions: 'play none reverse none',
-          },
-        })
-        .to(q('.wrapper2'), {
-          left: '10%',
-          top: "30%",
-          opacity: 1,
-          scrollTrigger: {
-            trigger: '.project-wrapper',
-            start: 'top 50%',
-            end: 'top 40%',
-            toggleActions: 'play none reverse none',
-          },
-        });
-      },
-
-      "(min-width: 468px)": function(){
+      "(max-width: 1600px)": function(){
         tl.current = gsap.timeline()
         .to(q('.moving-div'), {
           rotate: 25,
@@ -93,7 +67,61 @@ const Projects = () => {
             toggleActions: 'play none reverse none',
           },
         });
-      }
+      },
+
+      "(max-width: 1025px)": function(){
+        tl.current = gsap.timeline()
+        .to(q('.moving-div'), {
+          rotate: 25,
+          ease: 'power2.inOut',
+          opacity: 2,
+          scrollTrigger: {
+            trigger: '.project-wrapper',
+            start: 'top 50%',
+            end: 'top 40%',
+            toggleActions: 'play none reverse none',
+          },
+        })
+        .to(q('.wrapper2'), {
+          left: '10%',
+          top: "30%",
+          opacity: 1,
+          scrollTrigger: {
+            trigger: '.project-wrapper',
+            start: 'top 50%',
+            end: 'top 40%',
+            toggleActions: 'play none reverse none',
+          },
+        });
+      },
+
+
+      "(max-width: 468px)": function(){
+        tl.current = gsap.timeline()
+        .to(q('.moving-div'), {
+          rotate: 25,
+          ease: 'power2.inOut',
+          opacity: 2,
+          scrollTrigger: {
+            trigger: '.project-wrapper',
+            start: 'top 50%',
+            end: 'top 40%',
+            toggleActions: 'play none reverse none',
+          },
+        })
+        .to(q('.wrapper2'), {
+          left: '10%',
+          top: "30%",
+          opacity: 1,
+          scrollTrigger: {
+            trigger: '.project-wrapper',
+            start: 'top 50%',
+            end: 'top 40%',
+            toggleActions: 'play none reverse none',
+          },
+        });
+      },
+
     })
 
     

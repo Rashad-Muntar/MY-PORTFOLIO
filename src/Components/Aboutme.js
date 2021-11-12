@@ -57,7 +57,7 @@ const About = () => {
         <p className="first-section">
           I am a
           {' '}
-          <span className="span1">website and user interface developer specialized in frontend </span>
+          <span className="span1">web app and user interface developer specialized in frontend </span>
           , backend and TDD for complete scalable web apps.
         </p>
         <div className="sec-setion-wrapper">

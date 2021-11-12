@@ -49,6 +49,22 @@
     
 }
 
+@media screen and(max-width: 1024px) {
+    .about-wrapper{
+        width: 85%;
+
+        .about-content{
+            .first-section{
+                font-size: 2em;
+            }
+            .sec-setion-wrapper{
+                width: 80%;
+
+            }
+        }
+    }
+}
+
 @media screen and(max-width: 468px) {
     .about-wrapper{
         width: 95%;
