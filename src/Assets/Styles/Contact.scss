@@ -13,6 +13,16 @@
         height: 70%;
         text-align: center;
 
+        .header-title{
+            font-size: 1.3em;
+            color: honeydew;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 5px;
+            margin-left: -100px;
+            margin-bottom: 80px;
+        }
+
         .cta-text{
             width: 60%;
             text-align: center;
@@ -76,12 +86,45 @@
 
 }
 
+@media screen and(max-width: 1024px){
+    .contact-wrapper{
+        .inner-content-wrapper{
+            width: 80%;
+            .cta-text{
+                width: 100%;
+            }
+
+            .my-email{
+                font-size: 2.3em;
+            }
+
+            .resume{
+                left: 40%;
+            
+            }
+
+            .cta-text{
+                font-size: 1.7em;
+          
+            }
+        }
+
+     
+    }
+}
+
 
 @media screen and(max-width: 468px){
     .contact-wrapper{
         .inner-content-wrapper{
             width: 90%;
+
+            .header-title{
+                margin-bottom: 60px;
+            }
+            
             .cta-text{
+                font-size: 1.3em;
                 width: 100%;
             }
 
@@ -90,6 +133,7 @@
             }
 
             .resume{
+                
                 left: 30%;
             
             }

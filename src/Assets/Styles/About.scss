@@ -10,6 +10,7 @@
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 5px;
         margin-left: -100px;
+        margin-bottom: 80px;
     }
     
     .about-content{
@@ -52,6 +53,7 @@
 @media screen and(max-width: 1024px) {
     .about-wrapper{
         width: 85%;
+        height: 50vh;
 
         .about-content{
             .first-section{
@@ -68,6 +70,7 @@
 @media screen and(max-width: 468px) {
     .about-wrapper{
         width: 95%;
+        height: 80vh;
 
         .header-title{
            width: 80%;

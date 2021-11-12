@@ -12,7 +12,7 @@ const Stacks = () => {
   useEffect(() => {
     tl.current = gsap.timeline()
       .to(q('.skills-title'), {
-        marginLeft: '-50%',
+        marginLeft: '-95%',
         duration: 5,
         ease: 'power2.inOut',
         scrollTrigger: {

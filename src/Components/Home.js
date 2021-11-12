@@ -8,13 +8,12 @@ import Contact from './Contact';
 const Home = () => (
   <>
     <main className="main-wrapper">
-
       <Header />
-
       <About />
       <Projects />
       <Stacks />
       <Contact />
+
     </main>
   </>
 );
