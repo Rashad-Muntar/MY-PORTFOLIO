@@ -23,11 +23,11 @@ const Header = () => {
         duration: 1,
         ease: 'power2.inOut',
       })
-      .to(q('.social-icon'), { opacity: 1, stagger: 0.3 });
+      .to(q('.social-icon'), { opacity: 1, stagger: 0.2 });
   });
 
   return (
-    <section className="header-wrapper" ref={el} id="header" data-scroll-section>
+    <section className="header-wrapper" ref={el} id="header">
       <div className="name-wrapper">
         <span className="my-name">RASHAD MUNTAR</span>
       </div>

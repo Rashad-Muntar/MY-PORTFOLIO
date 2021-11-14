@@ -17,6 +17,7 @@ const About = () => {
         ease: 'sine.in',
         scrollTrigger: {
           trigger: '.about-wrapper',
+          // scroller: '.main-wrapper',
           start: 'top 100%',
           scrub: 1,
         },
@@ -26,6 +27,7 @@ const About = () => {
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: '.about-wrapper',
+          // scroller: '.main-wrapper',
           start: 'top 40%',
           end: 'top 20%',
           toggleActions: 'play none reverse none',
@@ -41,6 +43,7 @@ const About = () => {
       ease: 'sine.in',
       scrollTrigger: {
         trigger: '.about-wrapper',
+        // scroller: '.main-wrapper',
         start: 'top 100%',
         end: '+=400',
         scrub: 1,
@@ -49,7 +52,7 @@ const About = () => {
   });
 
   return (
-    <section className="about-wrapper" id="aboutme" ref={el} data-scroll-section>
+    <section className="about-wrapper" id="aboutme" ref={el}>
 
       <h1 className="header-title"> FEW WORDS ABOUT ME </h1>
 

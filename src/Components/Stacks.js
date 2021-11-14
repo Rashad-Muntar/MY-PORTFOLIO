@@ -17,13 +17,14 @@ const Stacks = () => {
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: '.contact',
+          // scroller: '.main-wrapper',
           start: 'top 60%',
           scrub: 1,
         },
       });
   });
   return (
-    <div className="contact" ref={el} data-scroll-section>
+    <div className="contact" ref={el}>
       <div className="content-wrapper">
         <div className="languages a">
           <p className="tool">Javascript</p>

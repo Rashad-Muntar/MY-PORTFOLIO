@@ -31,6 +31,9 @@ const Projects = () => {
   const tl = useRef();
 
   useEffect(() => {
+
+      
+    
     ScrollTrigger.matchMedia({
 
       "(max-width: 1600px)": function(){
@@ -41,6 +44,7 @@ const Projects = () => {
           opacity: 2,
           scrollTrigger: {
             trigger: '.project-wrapper',
+            // scroller: ".main-wrapper",
             start: 'top 50%',
             end: 'top 40%',
             toggleActions: 'play none reverse none',
@@ -51,6 +55,7 @@ const Projects = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: '.project-wrapper',
+            // scroller: ".main-wrapper",
             start: 'top 50%',
             end: 'top 40%',
             toggleActions: 'play none reverse none',
@@ -62,6 +67,7 @@ const Projects = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: '.project-wrapper',
+            // scroller: ".main-wrapper",
             start: 'top 50%',
             end: 'top 40%',
             toggleActions: 'play none reverse none',
@@ -77,6 +83,7 @@ const Projects = () => {
           opacity: 2,
           scrollTrigger: {
             trigger: '.project-wrapper',
+            // scroller: ".main-wrapper",
             start: 'top 50%',
             end: 'top 40%',
             toggleActions: 'play none reverse none',
@@ -88,6 +95,7 @@ const Projects = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: '.project-wrapper',
+            // scroller: ".main-wrapper",
             start: 'top 50%',
             end: 'top 40%',
             toggleActions: 'play none reverse none',
@@ -104,6 +112,7 @@ const Projects = () => {
           opacity: 2,
           scrollTrigger: {
             trigger: '.project-wrapper',
+            // scroller: ".main-wrapper",
             start: 'top 50%',
             end: 'top 40%',
             toggleActions: 'play none reverse none',
@@ -115,6 +124,7 @@ const Projects = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: '.project-wrapper',
+            // scroller: ".main-wrapper",
             start: 'top 50%',
             end: 'top 40%',
             toggleActions: 'play none reverse none',
@@ -124,15 +134,15 @@ const Projects = () => {
 
     })
 
-    
+
   });
 
   return (
     <>
       <ProjectModal productId={prId} closeModal={closeModal} showModal={open} />
-      <section className="project-wrapper" id="projects" ref={el} data-scroll-section>
+      <section className="project-wrapper" id="projects" ref={el}>
         <div className="moving-div" />
-        <div className="img-wrapper wrapper1">
+        <div className="img-wrapper wrapper1 data-scroll">
           <img className="card-img  pico1" src={pico} alt="pic1" />
           <img className="card-img pico2" src={pico2} alt="pic2" />
           <div className="card-content">
@@ -152,7 +162,7 @@ const Projects = () => {
           </h1>
           <Link className="view-all-link" to="/projects">VIEW ALL PROJECTS</Link>
         </div>
-        <div className="img-wrapper wrapper2">
+        <div className="img-wrapper wrapper2" >
           <img className="card-img  checker1" src={checker1} alt="pic3" />
           <img className="card-img  checker2" src={checker2} alt="pic4" />
           <div className="card-content">
