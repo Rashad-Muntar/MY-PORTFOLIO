@@ -27,7 +27,7 @@ const Header = () => {
   });
 
   return (
-    <section className="header-wrapper" ref={el} id="header">
+    <section className="header-wrapper" ref={el} id="header" data-scroll-section>
       <div className="name-wrapper">
         <span className="my-name">RASHAD MUNTAR</span>
       </div>

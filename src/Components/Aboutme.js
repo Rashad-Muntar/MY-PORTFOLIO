@@ -49,7 +49,7 @@ const About = () => {
   });
 
   return (
-    <section className="about-wrapper" id="aboutme" ref={el}>
+    <section className="about-wrapper" id="aboutme" ref={el} data-scroll-section>
 
       <h1 className="header-title"> FEW WORDS ABOUT ME </h1>
 

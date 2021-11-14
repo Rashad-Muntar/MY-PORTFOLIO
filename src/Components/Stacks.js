@@ -23,7 +23,7 @@ const Stacks = () => {
       });
   });
   return (
-    <div className="contact" ref={el}>
+    <div className="contact" ref={el} data-scroll-section>
       <div className="content-wrapper">
         <div className="languages a">
           <p className="tool">Javascript</p>

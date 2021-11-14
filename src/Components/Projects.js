@@ -130,7 +130,7 @@ const Projects = () => {
   return (
     <>
       <ProjectModal productId={prId} closeModal={closeModal} showModal={open} />
-      <section className="project-wrapper" id="projects" ref={el}>
+      <section className="project-wrapper" id="projects" ref={el} data-scroll-section>
         <div className="moving-div" />
         <div className="img-wrapper wrapper1">
           <img className="card-img  pico1" src={pico} alt="pic1" />
