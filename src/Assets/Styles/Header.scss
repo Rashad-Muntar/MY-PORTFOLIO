@@ -17,14 +17,15 @@
         .my-name{
             transform: translateY(100%);
             display: inline-block;
-            font-family: 'Bowlby One SC', cursive;
+            font-family: 'Righteous', cursive;
+            font-weight: 900;
         }
     }
 
     .my-job-title-wrapper{
         overflow: hidden;
-        font-size: 2em;
-        font-family: 'Archivo Black', sans-serif;
+        font-size: 1.5em;
+        font-family: 'Schoolbell', cursive;
 
         .my-job-title{
             transform: translateY(100%);

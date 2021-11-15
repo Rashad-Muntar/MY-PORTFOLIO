@@ -33,7 +33,7 @@ const Header = () => {
       </div>
 
       <div className="my-job-title-wrapper">
-        <div className="my-job-title">FULL-STACK DEVELOPER</div>
+        <div className="my-job-title">FULL-STACK WEB DEVELOPER</div>
       </div>
 
       <div className="social">
