@@ -93,8 +93,7 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
                A tracker that tracks the daily activity of a user.The application consumes an
                external API from a back-end I built with ruby on rails.
                This application helps you to be aware of what activities you spend
-               much time on and then gives you feed back on total number of hours you
-               have spent for each category of your normal day-to-day life
+               much time on.
              </p>
              <div className="stacks">
                <span className="stackItem">React.js - </span>
@@ -132,10 +131,7 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
                This application was built using HTML5, CSS3, vanilla Javascript and webpack
                This application
                fetches the current weather of a city or at any desired location.
-               User is able to toggle between temperature Units. This application
-               fetches the current
-               weather of a city or users any desired location. User is
-               able to toggle between temperature Units
+               User is able to toggle between temperature Units.
              </p>
              <div className="stacks">
                <span className="stackItem">HTML5 - </span>
@@ -171,8 +167,6 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
              <p className="pr-description">
                This application fetches real-time data of the top 16 cryptocurrencies.
                The user is able to search for cryptocurrency by its name in the search form.
-               The user can also go to the details page of each cryptocurrency by
-               clicking on the listed cryptocurrency on the homepage.
              </p>
              <div className="stacks">
                <span className="stackItem">React.js - </span>
@@ -210,7 +204,6 @@ const ProjectModal = ({ closeModal, showModal, productId }) => {
                The signed up user can create an
                article which is associated to the users account and it is associated to a category.
                User is able to vote an article and user is able to bookmark the article as well.
-               Built with Ruby on Rails 6.
              </p>
              <div className="stacks">
                <span className="stackItem">Ruby on Rails - </span>
