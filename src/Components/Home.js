@@ -16,8 +16,6 @@ const Home = () => {
   const initLoader = JSON.parse(sessionStorage.getItem('preloader'));
   const [preload, setPreload] = useState(initLoader);
 
-  console.log(preload);
-
   const [timer, setTimer] = useState(5);
 
   const el = useRef();

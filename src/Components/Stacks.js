@@ -37,7 +37,7 @@ const Stacks = () => {
           <p className="tool">Bootstrap</p>
           <p className="tool">Material UI</p>
           <p className="tool">GSAP</p>
-          <p className="tool">Jest</p>
+          <p className="tool">Semantic UI</p>
         </div>
 
         <div className="tools a">
