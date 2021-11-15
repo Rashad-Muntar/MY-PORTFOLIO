@@ -12,13 +12,12 @@ const About = () => {
   useEffect(() => {
     tl.current = gsap.timeline()
       .to(q('.header-title'), {
-        marginLeft: '500px',
-        duration: 1,
+        marginLeft: '300px',
+        duration: 2,
         ease: 'sine.in',
         scrollTrigger: {
           trigger: '.about-wrapper',
-          // scroller: '.main-wrapper',
-          start: 'top 100%',
+          start: 'top 80%',
           scrub: 1,
         },
       })
@@ -27,7 +26,6 @@ const About = () => {
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: '.about-wrapper',
-          // scroller: '.main-wrapper',
           start: 'top 40%',
           end: 'top 20%',
           toggleActions: 'play none reverse none',
@@ -43,7 +41,6 @@ const About = () => {
       ease: 'sine.in',
       scrollTrigger: {
         trigger: '.about-wrapper',
-        // scroller: '.main-wrapper',
         start: 'top 100%',
         end: '+=400',
         scrub: 1,

@@ -5,7 +5,7 @@ nav{
     width: 100%;
     background-color: #0c0c0c;
     background: rgba(12, 12, 12, 0.6);
-    z-index: 100;
+    z-index: 500;
 
     .nav-content-wrapper{
         width: 90%;
@@ -21,7 +21,18 @@ nav{
             font-size: 1.4em;
             text-decoration: none;
             color: #e2b8aa;
+            font-family: 'Righteous', cursive;
+            border: 2px solid gray;
+            padding: 0 10px;
+            transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            &:hover{
+                color: gray;
+                border: 2px solid #e2b8aa;
+            }
         }
+
+        
 
 
     .menuHamburger{
