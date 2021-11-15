@@ -9,7 +9,14 @@ import Contact from './Contact';
 import '../Assets/Styles/Home.scss';
 
 const Home = () => {
-  const [preload, setPreload] = useState(true);
+  if (sessionStorage.getItem('preloader') === null) {
+    sessionStorage.setItem('preloader', true);
+  }
+
+  const initLoader = JSON.parse(sessionStorage.getItem('preloader'));
+  const [preload, setPreload] = useState(initLoader);
+
+  console.log(preload);
 
   const [timer, setTimer] = useState(5);
 
@@ -21,7 +28,8 @@ const Home = () => {
 
   const clear = () => {
     window.clearInterval(id.current);
-    setPreload(false);
+    // setPreload(false);
+    setPreload(sessionStorage.setItem('preloader', JSON.stringify(false)));
   };
 
   useEffect(() => {

@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import resume from '../Assets/Documents/resume.pdf';
 
 const Contact = () => {
@@ -36,7 +37,7 @@ const Contact = () => {
           an email or use the social media links provided.
           I will gladly respond to you as soon as possible
         </p>
-        <a href="3" className="my-email">
+        <a href="mailto:rashadmuntar5@gmail.com" className="my-email">
           <span className="email-span">rashadmuntar5</span>
           @gmail.com
         </a>
@@ -47,6 +48,7 @@ const Contact = () => {
         <a className="contact-social" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/rashad-muntar/"><LinkedInIcon /></a>
         <a className="contact-social" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://github.com/Rashad-Muntar"><GitHubIcon /></a>
         <a className="contact-social" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><TwitterIcon /></a>
+        <a aria-label="twitter" className="contact-social" rel="noreferrer" href="mailto:rashadmuntar5@gmail.com"><EmailOutlinedIcon /></a>
       </div>
     </section>
   );

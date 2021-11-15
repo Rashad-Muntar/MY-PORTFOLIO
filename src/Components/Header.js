@@ -40,7 +40,7 @@ const Header = () => {
         <a aria-label="linkedin" className="social-icon" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/rashad-muntar/"><LinkedInIcon fontSize="large" /></a>
         <a aria-label="github" className="social-icon" rel="noreferrer" target="_blank" href="https://github.com/Rashad-Muntar"><GitHubIcon fontSize="large" /></a>
         <a aria-label="twitter" className="social-icon" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><TwitterIcon fontSize="large" /></a>
-        <a aria-label="twitter" className="social-icon" rel="noreferrer" target="_blank" href="https://twitter.com/RashadToure"><EmailOutlinedIcon fontSize="large" /></a>
+        <a aria-label="twitter" className="social-icon" rel="noreferrer" href="mailto:rashadmuntar5@gmail.com"><EmailOutlinedIcon fontSize="large" /></a>
       </div>
     </section>
   );
