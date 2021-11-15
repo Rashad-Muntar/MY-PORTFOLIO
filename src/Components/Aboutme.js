@@ -17,7 +17,7 @@ const About = () => {
         ease: 'sine.in',
         scrollTrigger: {
           trigger: '.about-wrapper',
-          start: 'top 80%',
+          start: 'top 100%',
           scrub: 1,
         },
       })
